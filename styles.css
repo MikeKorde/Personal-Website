@@ -1,11 +1,14 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url(./font/RobotoFlex-VariableFont_GRAD\,XTRA\,YOPQ\,YTAS\,YTDE\,YTFI\,YTLC\,YTUC\,opsz\,slnt\,wdth\,wght.ttf);
+}
 *{
     padding: 0;
-    margin: 0;
-    
+    margin: 0;  
 }
 
 body{
-    font-family: 'Fauna One', serif !important;
+    font-family: 'Roboto'!important;
     background-color: rgb(0, 0, 0) !important;
     color:white !important;
     overflow-x:hidden ;
