@@ -4,21 +4,16 @@ $(document).ready(function(){
     load();
   });
   
-
-
-
-
-
 const timer = ms => new Promise(res => setTimeout(res, ms))
 
-async function load () { // We need to wrap the loop into an async function for this to work
+async function load () { 
     $("#animated-Name").fadeIn(2000);
     var t="";
     for (var i = 0; i < prof.length; i++) {
         t = t+prof[i];
         $("#profesion").html(t).css("color","rgb(203, 202, 202)");
         $("#profesion").append("<b>|</b>").css("color","rgb(203, 202, 202)");
-            await timer(100); // then the created Promise can be awaited  
+            await timer(100); 
     }
     $("#profesion").html(prof);
     $("#arrow").append("&#92;&#47;").css("color", "black");
@@ -87,8 +82,7 @@ var data = google.visualization.arrayToDataTable([
   ['Javascript',75, 'color:#BA0707'],
   ['Jquery',60, 'color:#BA0707'],
   ['React',40, 'color:#BA0707'],
-  ['Angular',40, 'color:#BA0707'],
-  ['Vue',40, 'color:#BA0707']
+  ['Angular',30, 'color:#BA0707']
 ]);
 
 var options = {
